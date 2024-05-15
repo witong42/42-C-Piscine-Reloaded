@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 int	main(int ac, char **av)
 {
@@ -25,10 +25,10 @@ int	main(int ac, char **av)
 			j = 0;
 			while (av[i][j])
 			{
-				write(1, &av[i][j], 1);
+				ft_putchar(av[i][j]);
 				j++;
 			}
-			write(1, "\n", 1);
+			ft_putchar('\n');
 			i++;
 		}
 	}

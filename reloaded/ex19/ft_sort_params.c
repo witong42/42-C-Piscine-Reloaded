@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
@@ -31,6 +29,8 @@ void	ft_swap(char **a, char **b)
 	*b = swap;
 }
 
+void	ft_putchar(char c);
+
 void	ft_putstr(char *str)
 {
 	int	i;
@@ -38,10 +38,10 @@ void	ft_putstr(char *str)
 	i = 0;
 	while (str[i])
 	{
-		write(1, &str[i], 1);
+		ft_putchar(str[i]);
 		i++;
 	}
-	write(1, "\n", 1);
+	ft_putchar('\n');
 }
 
 int	main(int ac, char **av)
