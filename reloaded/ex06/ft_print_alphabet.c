@@ -6,13 +6,20 @@
 /*   By: witong <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 12:02:45 by witong            #+#    #+#             */
-/*   Updated: 2024/05/15 12:06:57 by witong           ###   ########.fr       */
+/*   Updated: 2024/05/15 16:56:17 by witong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
+	char	c;
+
+	c = 'a';
+	while (c <= 'z')
+	{
+		ft_putchar(c);
+		c++;
+	}
 }
