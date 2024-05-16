@@ -6,7 +6,7 @@
 /*   By: witong <witong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 20:17:10 by witong            #+#    #+#             */
-/*   Updated: 2024/05/15 20:26:22 by witong           ###   ########.fr       */
+/*   Updated: 2024/05/16 17:00:14 by witong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_count_if(char **tab, int (*f)(char *))
 	count = 0;
 	while (tab[i])
 	{
-		if(f(tab[i]) == 1)
+		if (f(tab[i]) == 1)
 			count++;
 		i++;
 	}
